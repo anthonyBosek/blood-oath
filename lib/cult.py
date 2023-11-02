@@ -11,6 +11,18 @@ class Cult:
         self.slogan = slogan
         type(self).all.append(self)
 
+    @classmethod
+    def find_by_name(cls, name):
+        pass
+
+    @classmethod
+    def find_by_location(cls, name):
+        pass
+
+    @classmethod
+    def find_by_founding_year(cls, name):
+        pass
+
     @property
     def name(self):
         return self._name
@@ -54,3 +66,9 @@ class Cult:
             raise TypeError("Cult slogan must be a string")
         else:
             self._slogan = new_val
+
+    def recruit_follower(self):
+        pass
+
+    def cult_population(self):
+        pass
